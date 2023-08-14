@@ -32,7 +32,7 @@ public class Customer {
     private String custSource;
 
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "customer")
     private Set<LinkMan> linkMans = new HashSet<>();
 
     @Override

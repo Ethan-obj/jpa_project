@@ -34,7 +34,7 @@ public class LinkMan {
     private Long lkmCustId;
 
 
-    @ManyToOne(targetEntity = Customer.class, fetch = FetchType.LAZY)
+    @ManyToOne(targetEntity = Customer.class)
     @JoinColumn(name = "lkmCustId", referencedColumnName = "custId")
     private Customer customer;
 
